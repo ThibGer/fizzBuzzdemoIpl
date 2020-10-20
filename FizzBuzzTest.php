@@ -36,10 +36,16 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("2", $actual);
     }
 
-    public function test_count_given3_schouldreturnFizz() {
+    public function test_count_given3_schouldReturnFizz() {
         $actual = $this->fizzBuzz->count(3);
 
         $this->assertEquals("Fizz", $actual);
+    }
+
+    public function test_count_given4_schouldReturnFizz() {
+        $actual = $this->fizzBuzz->count(4);
+
+        $this->assertEquals("4", $actual);
     }
 
 }
