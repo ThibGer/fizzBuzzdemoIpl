@@ -7,7 +7,7 @@ class FizzBuzz
 
     public function count(int $int): string
     {
-        if($int%3 === 0) return "Fizz";   //guard
+        if($this->isMultipleOf3($int)) return "Fizz";   //guard
         if($int === 5) return "Buzz";
 
 
@@ -15,6 +15,10 @@ class FizzBuzz
         return strval($int);
     }
 
+    public function isMultipleOf3(int $int): bool
+    {
+        return $int % 3 === 0;
+    }
 
 
 }
