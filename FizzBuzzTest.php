@@ -54,4 +54,8 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("Buzz", $actual);
     }
 
+    private function actCount(): string {
+        return $this->fizzBuzz->count($int);
+    }
+
 }
